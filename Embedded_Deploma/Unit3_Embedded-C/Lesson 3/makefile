@@ -1,5 +1,5 @@
 CC= arm-none-eabi-
-CFLAGS= -mcpu=cortex-m3 -g -mthumb
+CFLAGS= -mcpu=cortex-m3 -gdwarf-2 -mthumb
 INCS= -I .	
 SRC= $(wildcard *.c)
 OBJ= $(SRC:.c=.o)	
